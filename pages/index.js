@@ -14,8 +14,8 @@ function Home() {
   }, [isFlipped]);
 
   const imagePath = isFlipped
-    ? 'https://raw.githubusercontent.com/vitorhonna/vitorhonna.com.br/main/imgs/cat.jpeg?token=GHSAT0AAAAAACKC4QW2G2V33YOKUNZ4OTK2ZLQUP5Q'
-    : 'https://raw.githubusercontent.com/vitorhonna/vitorhonna.com.br/main/imgs/jucucu.png?token=GHSAT0AAAAAACKC4QW3GFEWN3KW6LBYFYWOZLQUQLQ';
+    ? 'https://raw.githubusercontent.com/vitorhonna/vitorhonna.com.br/main/imgs/cat.jpeg'
+    : 'https://raw.githubusercontent.com/vitorhonna/vitorhonna.com.br/main/imgs/jucucu.png';
 
   return (
     <div>
