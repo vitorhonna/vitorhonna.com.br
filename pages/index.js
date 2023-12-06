@@ -7,7 +7,7 @@ function Home() {
     // Automatically change the image after 2 seconds
     const timeoutId = setTimeout(() => {
       setIsFlipped(!isFlipped);
-    }, 2000);
+    }, 1500);
 
     // Clear the timeout when the component unmounts or when isFlipped changes
     return () => clearTimeout(timeoutId);
