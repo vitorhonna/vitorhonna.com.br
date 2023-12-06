@@ -1,10 +1,28 @@
+import React, { useState } from 'react';
+
 function Home() {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <div>
       <h1>Jucucu, vc olhou!</h1>
       <img
-        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7SKaEgguQ7cMCDX5Mk8az5Q-uf5Yv2Fj9tcG5xHV1I0WQZNH3o9jKPhBWiackAQv7yI&usqp=CAU'
-        alt='cat'
+        src={
+          isHovered
+            ? 'https://raw.githubusercontent.com/vitorhonna/vitorhonna.com.br/main/imgs/cat.jpeg?token=GHSAT0AAAAAACKC4QW2G2V33YOKUNZ4OTK2ZLQUP5Q'
+            : 'https://raw.githubusercontent.com/vitorhonna/vitorhonna.com.br/main/imgs/jucucu.png?token=GHSAT0AAAAAACKC4QW3GFEWN3KW6LBYFYWOZLQUQLQ'
+        }
+        alt='image'
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       />
     </div>
   );
